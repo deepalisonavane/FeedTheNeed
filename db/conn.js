@@ -13,7 +13,7 @@ useFindAndModify  :false
 
     console.log("CONNECTION SUCCESS")
 }).catch(()=>{
-    console.log("connection failed")
+    console.log("Connection failed")
 })
 
 
