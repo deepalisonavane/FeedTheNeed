@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+ button{
+     
+     border-radius: 5px;
+
+ }
+body{
+    background-color: rgb(199, 132, 173);
+}
+ p{
+     color: black;
+ }
+    </style>
+</head>
+<body>
+    
+
+{{#each donations}}
+<div class="class" id="one" style="width: 18rem;">
+    <div>
+        <p>Donar name: {{donar}}</p>
+        <p>Food item:{{fooditems}}</p>
+         <p>Quantity:{{quantity}}</p>
+        <p>Meeting point: {{meetingpoint}}</p>
+        <p>Food type: {{foodtype}}</p>
+        <p>Contact no: {{contactno}}</p>
+       <button>
+        {{!-- <a href="tel:{{contactno}}">Call Donor </a> --}}
+        <a href="tel:1234567890" class="phoneMe">Call Now!</a>
+
+          </button>
+          <button onclick="fun()" id="btn">I will Pickup</button>
+    </div>
+</div>
+{{/each}}
+<script>
+    function fun(){
+document.getElementById("btn").disabled= true;
+
+let sure = confirm("Are you the sure u want choose this donation");
+
+alert( sure );
+    }
+
+
+</script>
+
+{{!-- {{/each}} --}}
+</body>
+</html>

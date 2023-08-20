@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Need</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+     crossorigin="anonymous">
+
+<style>
+
+
+button{
+  background-color: rgb(124, 14, 124);
+  color: white;
+  margin-left: 20px;
+  border: none;
+  
+}
+a{
+  color: white;
+  border: none;
+}
+p{
+  color: black;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 2%;
+  font: 1em sans-serif;
+  
+
+}
+h1{
+  color:black;
+  margin-left: 10px;
+  margin-top: 20px;
+  
+}
+img{
+  width: 100%;
+  transform: 0.3s;
+}
+img:hover {
+  opacity: 50px;
+  
+}
+
+.content{
+  padding: 50px 50px;
+  background-color: #ffffff;
+  height:  250px;
+  color: rgb(91, 16, 63);
+  font-size: 30px;
+  text-align: center;
+  text-decoration: wavy;
+  border: 4cm;
+
+  
+}
+
+</style>     
+</head>
+<body>
+    {{>navbar}}
+
+    <div >
+     
+    {{!-- <h1>We are on Mission to Solve Hunger join the cause</h1> --}}
+  
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="   https://www.nofoodwaste.org/images/home-page/new/home-banner-4.jpg
+" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+     <div class="content">
+      Our works are designed to provide essential food support to underserved areas
+      in the form of food or packaged food products depending on the need.
+       Our goal is to ensure, Feed people not landfills.
+    </div>
+    <div class="card" style="width: 18rem;" >
+  <img src="" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+  </div>
+  
+</div>
+
+  <button >
+  
+  <a href="/donor">Donate</a>
+
+  </button>
+
+
+   
+<button>
+  <a href="/donor">Volunteer</a></button>
+
+
+
+    </div>
+</body>
+
+</html>
