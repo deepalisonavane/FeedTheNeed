@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed The Need</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
@@ -50,7 +51,7 @@ img:hover {
 
 .content{
   padding: 50px 50px;
-  background-color: #ffffff;
+  background-color: #98cac4;
   height:  250px;
   color: rgb(91, 16, 63);
   font-size: 30px;
@@ -60,38 +61,49 @@ img:hover {
 
   
 }
-
+.card {
+  background-color: aliceblue;
+  width: 2510px;
+  height: 300px;
+  margin-left:20px;
+  margin-top: 20px;
+  box-shadow: 5px 5px;;
+}
+.section2{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.sec3{
+  margin-top: 100px;
+}
+.sec3para{
+  font-size: large;
+  margin-right: 350px;
+}
+footer{
+  background-color:#98cac4;
+  color: white;
+  height: 200px;
+}
 </style>     
 </head>
 <body>
     {{>navbar}}
 
-    <div >
-     
-    {{!-- <h1>We are on Mission to Solve Hunger join the cause</h1> --}}
-  
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="   https://www.nofoodwaste.org/images/home-page/new/home-banner-4.jpg
 " class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+     
+    {{!-- <h1>We are on Mission to Solve Hunger join the cause</h1> --}}
+  
+
 
 
 
@@ -107,31 +119,58 @@ img:hover {
       in the form of food or packaged food products depending on the need.
        Our goal is to ensure, Feed people not landfills.
     </div>
-    <div class="card" style="width: 18rem;" >
-  <img src="" class="card-img-top" alt="...">
+    <div class="section2">
+    <div class="card" >
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <i class="fa fa-phone" style="font-size:36px; padding:20px ; margin-left :10px"   ></i>
+    <h5 class="card-title">Get in touch </h5>
+    <p class="card-text"> 9889373778</p>
+    
+  </div>
+  </div>
+   <div class="card" >
+  <div class="card-body">
+ <i class="fa fa-check" style="font-size:36px; padding:20px ; margin-left :10px"></i>
+    <h5 class="card-title">Quality Assurance </h5>
+    <p class="card-text"> Excess Food will be checked based on our Food Safety and Standard Guidelines</p>
+    </div>
+  </div>
+   <div class="card" >
+  <div class="card-body">
+    <i class="fa fa-compass"  style="font-size:36px; padding:20px ; margin-left :10px"></i>
+    <h5 class="card-title">Locate</h5>
+    <p class="card-text"> We spot the nearest “Hunger Spot” which is the most underserved areas</p>
     
   </div>
   
 </div>
+ <div class="card" >
+  <div class="card-body">
+   <i class="fa fa-truck" style="font-size:36px; padding:20px ; margin-left :10px"   ></i>
+    <h5 class="card-title">Deliver </h5>
+    <p class="card-text"> Excess food is distributed to needy people with love.</p>
+    
+  </div>
+</div>
 
-  <button >
   
-  <a href="/donor">Donate</a>
-
-  </button>
-
-
-   
-<button>
-  <a href="/donor">Volunteer</a></button>
+ 
 
 
 
     </div>
+    <div class="sec3">
+  <p class="sec3para">We are solving food waste & hunger across 15+ cities in India!</p>
+  <h1 style="text-align: center;">19 Million Happy Beneficiaries!</h1>
+  <p class="sec3para">Every day No Food Waste Team and Volunteers serve 5000+ needy people on an average!</p>
+ <a style="text-decoration: none;" href="/donor"><button style="padding: 10px; border-radius:15px"
+>Donate </a> </button>
+</div>
+  <footer>
+    <hr>
+        <p >&copy; 2023 Feed the Need</p>
+        <p >Contact: feedtheneed@info.com</p>
+    </footer>
 </body>
 
 </html>
