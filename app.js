@@ -18,9 +18,9 @@ const cookieParser = require("cookie-parser");
 const { fstat } = require("fs");
 const { response } = require("express");
 const { URLSearchParams } = require("url");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
-// const stactic_path = path.join(__dirname, "public");
+const stactic_path = path.join(__dirname, "public");
 const template_path = path.join(__dirname, "/templates/views");
 const partial_path = path.join(__dirname, "templates/partials");
 
@@ -31,7 +31,7 @@ app.use(express.urlencoded({extended:false}));
 
  
 
-// app.use(express.static(stactic_path));
+ app.use(express.static(stactic_path));
 
 app.set("view engine", "hbs");
 app.set("views",template_path);
