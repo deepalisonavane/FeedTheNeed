@@ -15,30 +15,39 @@
          button{
 color:ghostwhite;
 border: none;
-background-color: #ad45a8;
+background-color: #2e2c6d;
+margin-left: 50%;
 
 }
          input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: rgb(5, 5, 5);
+    color: rgb(254, 254, 254);
     margin-bottom: 9px;
     border: none;
     border-bottom: 1px solid rgb(15, 10, 10);
     outline: none;
     background: transparent;
   }
+  #section{
+    display: flex;
+    justify-content: space-around;
+
+
+  }
     
     .login-box {
-    position: absolute;
-    height: 700px;
-    top: 110%;
-    left: 50%;
+    position: absolute; 
+    height: 450px; 
+    top: 60%;
+    bottom: 50%;
+    left: 50%; 
     width: 400px;
-    padding: 40px;
+    padding: 40px 40px;
     transform: translate(-50%, -50%);
-    background: rgba(205, 220, 224, 0.801);
+    background: rgba(225, 226, 231, 0.801);
+    color: #0d0d0d;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -47,15 +56,36 @@ background-color: #ad45a8;
   }
 
     body{
-        background-image: url('https://www.businessinsider.in/photo/82230244/The-COVID-19-crisis-would-be-much-worse-without-these-good-samaritans-of-India-providing-home-cooked-food-financial-assistance-and-medicines.jpg');
+        {{!-- https://www.businessinsider.in/photo/82230244/The-COVID-19-crisis-would-be-much-worse-without-these-good-samaritans-of-India-providing-home-cooked-food-financial-assistance-and-medicines.jpg'); --}}
         background-repeat: no-repeat;
          background-attachment: fixed;
         background-size: cover;
         
     }
-    
+    p{
+        font-size: x-large;
+        align-content: center;
+    }
 
+    h2{
+        color: rgb(10, 10, 109);
+        margin-top: 50px;
+        align-content: center;
+    }
+    .section{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 20px;
 
+    }
+    img{
+        height: 100px;
+    }
+    p{
+        margin-top: 2px;
+    }
+   
      </style>
          
      </body>
@@ -65,7 +95,12 @@ background-color: #ad45a8;
 
 <center>
     
-
+        <h2  >One of the greatest gifts you can give is your time</h2>
+<p>Join our team and visit hunger spots and distribute the food in your city.
+ we need more active volunteers to spread love and fight against hunger .no age restrictions
+  everyone who is willing to volunteer can join with us. Support us.</p></center>
+<div class="section">
+    <div>
 <form action="/vol" method="POST" class="login-box">
 <a href="/vollogin">Already Register??</a><br><br>
 <div>Volunteer Details</div><br>
@@ -83,13 +118,6 @@ background-color: #ad45a8;
         <div>
             <input type="number" name="volno" placeholder="Contact No" required>
     </div>
-     
-        {{!-- <div>
-      <textarea name="voladd" placeholder="Address" ></textarea>  
-       <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7736499.148433491!2d72.27657120898783!3d18.771954772859896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfc41e9c9cd6f9%3A0x1b2f22924be04fb6!2sMaharashtra!5e0!3m2!1sen!2sin!4v1622890315989!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p> --}}
-      
-        
-        
         <div>
         <input type="password" name="volpassword" placeholder="Password"  required>
     </div>
@@ -97,7 +125,7 @@ background-color: #ad45a8;
     <div>
         <input type="password" name="volcpassword" placeholder="Confirm Password" required>
     </div>
-    <div>
+    {{!-- <div>
         Vehical mode:
         </div>
         <div>
@@ -105,12 +133,15 @@ background-color: #ad45a8;
             <input type="radio" name="volveh" value="Four Wheeler" required>Four Wheeler</input><br>
             <input type="radio" name="volveh" value="Others" required>Others</input>
 
-    </div>
+    </div> --}}
     <div>
          <button type="submit" name="submit">Submit</button> 
     </div> 
     </form>
-    </center>
+    </div>
+
+   
+    </div>
     <script>
         function func() {
        window.location.assign("/login")

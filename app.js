@@ -18,6 +18,7 @@ const cookieParser = require("cookie-parser");
 const { fstat } = require("fs");
 const { response } = require("express");
 const { URLSearchParams } = require("url");
+const { error } = require('console');
 const port = process.env.PORT || 5000;
 
 const stactic_path = path.join(__dirname, "public");
@@ -269,11 +270,13 @@ app.post("/vollogin", async(req,res) =>{
                
             })
         
-              const donationrec = await food.save();
+              const donationrec = await feed.save();
+              console.log(donationrec)
               res.status(201).render("index");
         
         } catch (error) {
-          res.status(400).send("error");  
+          res.status(400).send(error); 
+          console.log(error) 
         }
         
         })
